@@ -1,5 +1,5 @@
 {
-    "name": "wisembly/elephant.io",
+    "name": "toleckk/elephant.io",
     "type": "library",
     "description": "Send events to a websocket real time engine though PHP",
     "keywords": ["Nodejs", "WebSocket", "Dialog", "Real Time"],
@@ -33,7 +33,7 @@
     ],
 
     "require": {
-        "php": ">=5.4.0",
+        "php": ">=7.2.0",
         "psr/log": "~1.0"
     },
 
