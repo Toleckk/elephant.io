@@ -80,10 +80,10 @@ class Client
      *
      * @return string Message read from the socket
      */
-    public function read()
+    public function read(int $limitTime = null)
     {
         $this->logger->debug('Reading a new message from the socket');
-        return $this->engine->read();
+        return $this->engine->read($limitTime);
     }
 
     /**
@@ -141,3 +141,4 @@ class Client
         return $this->engine;
     }
 }
+

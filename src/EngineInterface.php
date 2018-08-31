@@ -42,7 +42,7 @@ interface EngineInterface
      *
      * @return string Data read from the socket
      */
-    public function read();
+    public function read(int $limitTime = null);
 
     /**
      * Emits a message through the websocket
@@ -58,10 +58,11 @@ interface EngineInterface
     /** Gets the name of the engine */
     public function getName();
 
-    /**
+    /** 
      * Sets the namespace for the next messages
      *
      * @param string $namespace the namespace
      */
     public function of($namespace);
 }
+

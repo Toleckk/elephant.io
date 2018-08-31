@@ -31,3 +31,4 @@ class ServerConnectionFailureException extends RuntimeException
         return $this->errorMessage;
     }
 }
+
